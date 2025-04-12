@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream> 
 #include <limits>
+#include <filesystem>
+
 using namespace std;
 
 #define MAX_N 100 
@@ -70,7 +72,7 @@ int main() {
     
     // Combinaciones lexicográficas
     while (Comparacion) {
-        cout << "Combinació\242: " << contador + 1 << ": ";
+        cout << "Combinació\242n: " << contador + 1 << ": ";
         contador++;
         for (int i = 0; i < r; i++) 
         {
@@ -118,7 +120,17 @@ int main() {
     cout << "N\243mero de combinaciones generadas: " << contador << endl;
     cout << "N\243mero teorico de combinaciones: " << combinacionesTeoricas << endl;
     file.close(); 
-    cout << "Combinaciones guardadas en el archivo: " << filename << endl;
+    if (contador == combinacionesTeoricas)
+    {
+        cout << "El n\243mero de combinaciones generadas coincide con el n\243mero te\242rico." << endl;
+    } 
+    else 
+    {
+        cout << "El n\243mero de combinaciones generadas no coincide con el n\243mero te\242rico." << endl;
+    }
+    
+    cout << "Combinaciones guardadas en el archivo: " 
+     << std::filesystem::current_path() / filename << endl;
 
     return 0;
 }
