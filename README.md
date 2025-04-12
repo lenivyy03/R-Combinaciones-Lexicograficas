@@ -13,6 +13,7 @@ Este programa, desarrollado en C++, permite generar todas las r-combinaciones po
 
 Requisitos del sistema:
 Sistema operativo: Windows, macOS o Linux.
+NOTA IMPORTANTE: Si lo corres en macOS o Linux este programa si se compilara y ejecutará PERO algunos carácteres no se mostrarán apropiadamente. 
 Compilador de C++ con soporte para el estándar C++17 o superior (por ejemplo: g++, clang++, MSVC).
 Editor de texto o IDE (opcional): VSCode, Code::Blocks, CLion, etc.
 
