@@ -72,7 +72,7 @@ int main() {
     
     // Combinaciones lexicográficas
     while (Comparacion) {
-        cout << "Combinació\242n: " << contador + 1 << ": ";
+        cout << "Combinaci\242n: " << contador + 1 << ": ";
         contador++;
         for (int i = 0; i < r; i++) 
         {
